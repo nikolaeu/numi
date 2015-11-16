@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		32CA9F661BF9D347006ED1B9 /* Numi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CA9F651BF9D347006ED1B9 /* Numi.framework */; };
 		32CA9F6C1BF9D3D7006ED1B9 /* SampleNumiPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CA9F6B1BF9D3D7006ED1B9 /* SampleNumiPlugin.swift */; };
-		32CA9F6E1BF9E8C9006ED1B9 /* Readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 32CA9F6D1BF9E8C9006ED1B9 /* Readme.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -145,7 +144,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32CA9F6E1BF9E8C9006ED1B9 /* Readme.md in Sources */,
 				32CA9F6C1BF9D3D7006ED1B9 /* SampleNumiPlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

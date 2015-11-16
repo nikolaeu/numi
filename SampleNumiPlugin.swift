@@ -31,7 +31,7 @@ class AddFunction : Function {
         return "my_add"
     }
     
-    var phrases: [String] {
+    var variants: [String] {
         return ["my_add", "my_sum"]
     }
     
