@@ -23,6 +23,6 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2015 Dmitry Nikolaev. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string></string>
+	<string>SampleNumiPlugin.SampleNumiPlugin</string>
 </dict>
 </plist>

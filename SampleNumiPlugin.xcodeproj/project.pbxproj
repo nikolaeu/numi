@@ -6,9 +6,19 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		32CA9F661BF9D347006ED1B9 /* Numi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CA9F651BF9D347006ED1B9 /* Numi.framework */; };
+		32CA9F6C1BF9D3D7006ED1B9 /* SampleNumiPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CA9F6B1BF9D3D7006ED1B9 /* SampleNumiPlugin.swift */; };
+		32CA9F6E1BF9E8C9006ED1B9 /* Readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 32CA9F6D1BF9E8C9006ED1B9 /* Readme.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		32CA9F4C1BF9D2C1006ED1B9 /* SampleNumiPlugin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleNumiPlugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		32CA9F4F1BF9D2C1006ED1B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32CA9F651BF9D347006ED1B9 /* Numi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Numi.framework; path = "../../../Library/Developer/Xcode/DerivedData/Numi-fatjvskfjifjobcsniyzivfkvwti/Build/Products/Debug/Numi.framework"; sourceTree = "<group>"; };
+		32CA9F6A1BF9D3D6006ED1B9 /* SampleNumiPlugin-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SampleNumiPlugin-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		32CA9F6B1BF9D3D7006ED1B9 /* SampleNumiPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleNumiPlugin.swift; sourceTree = SOURCE_ROOT; };
+		32CA9F6D1BF9E8C9006ED1B9 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -16,6 +26,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32CA9F661BF9D347006ED1B9 /* Numi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -25,8 +36,10 @@
 		32CA9F431BF9D2C1006ED1B9 = {
 			isa = PBXGroup;
 			children = (
+				32CA9F651BF9D347006ED1B9 /* Numi.framework */,
 				32CA9F4E1BF9D2C1006ED1B9 /* SampleNumiPlugin */,
 				32CA9F4D1BF9D2C1006ED1B9 /* Products */,
+				32CA9F6D1BF9E8C9006ED1B9 /* Readme.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -41,7 +54,9 @@
 		32CA9F4E1BF9D2C1006ED1B9 /* SampleNumiPlugin */ = {
 			isa = PBXGroup;
 			children = (
+				32CA9F6B1BF9D3D7006ED1B9 /* SampleNumiPlugin.swift */,
 				32CA9F4F1BF9D2C1006ED1B9 /* Info.plist */,
+				32CA9F6A1BF9D3D6006ED1B9 /* SampleNumiPlugin-Bridging-Header.h */,
 			);
 			path = SampleNumiPlugin;
 			sourceTree = "<group>";
@@ -56,6 +71,7 @@
 				32CA9F481BF9D2C1006ED1B9 /* Sources */,
 				32CA9F491BF9D2C1006ED1B9 /* Frameworks */,
 				32CA9F4A1BF9D2C1006ED1B9 /* Resources */,
+				32CA9F691BF9D3B1006ED1B9 /* Copy to Numi Plugins */,
 			);
 			buildRules = (
 			);
@@ -107,11 +123,30 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		32CA9F691BF9D3B1006ED1B9 /* Copy to Numi Plugins */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy to Numi Plugins";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -r \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_NAME}.bundle\" ~/Library/Application\\ Support/Numi/Plugins/";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		32CA9F481BF9D2C1006ED1B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32CA9F6E1BF9E8C9006ED1B9 /* Readme.md in Sources */,
+				32CA9F6C1BF9D3D7006ED1B9 /* SampleNumiPlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,12 +235,16 @@
 		32CA9F531BF9D2C1006ED1B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = SampleNumiPlugin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikolaeu.SampleNumiPlugin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SampleNumiPlugin-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -213,12 +252,15 @@
 		32CA9F541BF9D2C1006ED1B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = SampleNumiPlugin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikolaeu.SampleNumiPlugin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SampleNumiPlugin-Bridging-Header.h";
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
@@ -242,6 +284,7 @@
 				32CA9F541BF9D2C1006ED1B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
