@@ -28,10 +28,10 @@ cp -r "${BUILT_PRODUCTS_DIR}/${EXECUTABLE_NAME}.bundle" ~/Library/Application\ S
 import Numi
 
 class SampleNumiPlugin : NumiPlugin {
-override func setup(module: Numi) {
-NSLog("Plugin loaded")
-// put your plugin code here
-}
+  override func setup(module: Numi) {
+    NSLog("Plugin loaded")
+    // put your plugin code here
+  }
 }
 ```
 
