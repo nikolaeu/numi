@@ -15,7 +15,7 @@ In order to extend Numi functionality you can use Numi plugin kit to develop and
 ## Setting up plugin project in XCode
 
 1. Create new XCode Bundle project: File → New → Project → (OS X) Framework & Library → Bundle
-2. Download [Numi.framework](https://github.com/nikolaeu/NumiKit/releases) and drag it into project. You don't need to create copy build phase for framework.
+2. Download [Numi.framework](https://github.com/nikolaeu/NumiKit/releases) and drag it into project. Check copy items checkbox.
 3. Add new script build phase in the build phases section of project to copy plugin into Numi plugins directory:
 
 ```
@@ -36,7 +36,8 @@ class SampleNumiPlugin : NumiPlugin {
 ```
 
 5. Set principal class in Info.plist. Use full class name (with module name): `SampleNumiPlugin.SampleNumiPlugin`
-6. Download latest [development version](http://numi.io/static/dev/Numi.zip) of Numi and try to run it with your plugin.
+6. Archive your bundle project
+7. Run Numi application. Your bundle should be loaded. To check, open Console application, and type "Numi" in search box. You should see some sort of "Plugin added: YOUR_PLUGIN_BUNDLE" message.
 
 ## Sample Numi Plugin
 
