@@ -21,6 +21,8 @@ build/
 xcuserdata
 !*.xcodeproj/xcshareddata
 
+xcuserdata/
+
 profile
 *.moved-aside
 DerivedData
