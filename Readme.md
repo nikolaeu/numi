@@ -1,45 +1,83 @@
 ## What is Numi
 
-[Numi](http://numi.io) is a handy calculator app for Mac. It allows to describe tasks the natural way and instantly get an accurate answer. For example, `$20 in euro - 5% discount` or `today + 2 weeks`. Numi is not limited to simple calculations, it can solve expressions of any complexity, with parentheses, mathematical operations and high accuracy (up to 38 mantissa digits).
+[Numi](http://numi.io) is a handy calculator app for Mac. It allows to describe tasks the natural way and instantly get an accurate answer. For example, `$20 in euro - 5% discount` or `today + 2 weeks`. 
 
-* **Units**. Numi supports currency, length, area, volume, time, temperature, css and data size conversion. It also allows to use dates in arithmetics.
-* **Variables & tokens**. Numi allows to reuse calculations by using variables. By using special variables (tokens) like `sum` or `average`, it is possible to automatically calculate the sum or average value for all previous results
-* **Percentages**. Numi allows to calculate not just a percent of a value, but different percentage situation, like `5% of what is 20 cm` or `15% on $20`
-* **Time zones**. You can easily convert time between time zones and get current time in different locations like `Seoul time` or `now in Germany`.
-* **Numeral systems**. It is possible to use numbers in binary, octal or hexadecimal form using appropriate prefix: `0b`, `0o` and `0x`. You can change output as well.
-* **CSS**. You can make some CSS computations and conversions.
-* **Math functions**. Numi support variety of math functions, like sin, cos, exponent, root, log, factorial, rounding and many others.
+You can use JavaScript extensions to add global variables, custom units or functions. Numi loads your extension on the fly. In case of any errors, they will be printed in extensions log control in preferences. You might notice default extension with commented code in extensions folder. Feel free to modify it, or play with it. Delete this file to reset it contents to default.
 
-In order to extend Numi functionality you can use Numi plugin kit to develop and distribute your own plugins.
-
-## Setting up plugin project in XCode
-
-1. Create new XCode Bundle project: File → New → Project → (OS X) Framework & Library → Bundle
-2. Download [Numi.framework](https://github.com/nikolaeu/NumiKit/releases) and drag it into project. Check copy items checkbox.
-3. Add new script build phase in the build phases section of project to copy plugin into Numi plugins directory:
+Numi supports JavaScript extensions since `3.17`. Right now only limited set of API is available via JavaScript, but the plan is to open as mach API as possible. To start using test version with JavaScript extensions, you'll need to switch to test update stream. In terminal:
 
 ```
-cp -r "${BUILT_PRODUCTS_DIR}/${EXECUTABLE_NAME}.bundle" ~/Library/Application\ Support/Numi/Plugins/
+defaults write com.dmitrynikolaev.numi SUUpdaterIsInTestMode 'YES'
 ```
 
-4. Add main plugin class, it should derive from `NumiPlugin` and contains setup function:
+And check for app updates.
 
-```swift
-import Numi
 
-class SampleNumiPlugin : NumiPlugin {
-  override func setup(module: Numi) {
-    NSLog("Plugin loaded")
-    // put your plugin code here
-  }
-}
+
+## Values
+
+Each value in Numi represented as an JavaScript object with a set of properties. Any properties are optional. Here is the usual way of creating values:
+
+```
+var value = { "double": 5, "unitId" : "USD" }
 ```
 
-5. Set principal class in Info.plist. Use full class name (with module name): `SampleNumiPlugin.SampleNumiPlugin`
-6. Archive your bundle project
-7. Run Numi application. Your bundle should be loaded. To check, open Console application, and type "Numi" in search box. You should see some sort of "Plugin added: YOUR_PLUGIN_BUNDLE" message.
 
-## Sample Numi Plugin
+## Global Variables
 
-Project contains sample plugin with declaration of new constant, unit of measurement and new function. This plugin is aimed to demonstrate just basic stuff that can be done with NumiKit. Ensure you have copied [NumiKit](https://github.com/nikolaeu/NumiKit/releases) into project before compiling it.
+Use `numi.setVariable` function do declare global variable. 
+
+```
+numi.setVariable("xxx", { "double": 5, "unitId" : "USD" });
+```
+
+## Custom Units
+
+Use `numi.addUnit` to add new unit. Right now custom units limited to units with ratio-based conversion. `id` field required for internal use, and might be any unique literal for new unit. `baseUnitId` might be picked up from [units list](#units-list) section. 
+
+```
+numi.addUnit({
+    "id": "horse",
+    "phrases": "horse, horses, hrs",
+    "baseUnitId": "m",
+    "format" : "hrs",
+    "ratio" : 2.4,
+});
+```
+
+## Custom Functions
+
+Use `numi.addFunction` to add new function. Note, values passed into evaluated function in form of array. You might need to check values attributes before making any computations.
+
+To use function with multiple arguments you can use `;` in Numi, like `myFunction(1;5;4)`.
+
+```
+numi.addFunction({
+    "id": "zum",
+    "phrases": "zum",
+    "function" : function(values) {
+        return {
+            "double": values[0].double + values[1].double,
+        };
+    }
+});
+```
+
+## Units List
+
+| Unit name | Unit ID |
+| --- | --- |
+| Meter | m |
+| Second | second |
+| Percentage | percent |
+| Square meter | m2 |
+| Cubic meter | m3 |
+| Bit | bit |
+| Byte | byte |
+| Radian | radian |
+| Gram | gram |
+
+
+
+
 
