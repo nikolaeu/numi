@@ -4,12 +4,6 @@
 
 You can use JavaScript extensions to add global variables, custom units or functions. Right now only limited set of API is available via JavaScript, but the plan is to open as mach API as possible.
 
-> Numi supports JavaScript extensions since `3.16`. To start using this app version, you'll need to switch to test update stream first. Execute this in terminal and then check for app updates:
-
-> ```
-> defaults write com.dmitrynikolaev.numi SUUpdaterIsInTestMode 'YES'
-> ```
-
 ## Table of Contents
 
 * [Logging](#logging)
