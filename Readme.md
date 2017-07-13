@@ -2,7 +2,7 @@
 
 [Numi](http://numi.io) is a handy calculator app for macOS. It allows to describe tasks the natural way and instantly get an accurate answer. For example, `$20 in euro - 5% discount` or `today + 2 weeks`. 
 
-You can use JavaScript extensions to add global variables, custom units or functions. Right now only limited set of API is available via JavaScript, but the plan is to open as mach API as possible.
+You can use JavaScript extensions to add global variables, custom units or functions. Right now only limited set of API is available via JavaScript, but the plan is to open as much API as possible.
 
 ## Table of Contents
 
