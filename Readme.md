@@ -79,6 +79,7 @@ numi.addFunction({ "id": "zum", "phrases": "zum" }, function(values) {
 | Byte | byte |
 | Radian | radian |
 | Gram | gram |
+| US Dollars | USD |
 
 
 ### Sample Extensions
