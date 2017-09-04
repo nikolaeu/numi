@@ -85,7 +85,4 @@ numi.addFunction({ "id": "zum", "phrases": "zum" }, function(values) {
 ### Sample Extensions
 
 - [Fluid ounces](fluid-ounce.js)
-
-
-
-
+- [Scaramucci unit](https://github.com/JohJakob/Numi-Scaramucci/blob/master/scaramucci.js)
