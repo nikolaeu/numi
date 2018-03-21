@@ -15,6 +15,6 @@ You can get log base 2 like follows:
 
 `log 4`
 
-Or any base can be specified as second parameter:
+Or any base can be specified as first parameter:
 
 `log 2;4`
