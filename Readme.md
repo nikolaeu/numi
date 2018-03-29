@@ -16,7 +16,7 @@ You can use JavaScript extensions to add global variables, custom units or funct
 
 Use `log` function to send output from your extension to log window. 
 
-```
+```js
 log("Function called!");
 ```
 
@@ -24,19 +24,19 @@ log("Function called!");
 
 Each value in Numi might be represented in JavaScript as an object with a set of properties, describing decimal value, unit type etc. Here is the usual way of creating new values for Numi:
 
-```
+```js
 var value = { "double": 5, "unitId" : "USD" }
 ```
 
 Use `numi.setVariable` function to declare global variables. 
 
-```
+```js
 numi.setVariable("xxx", { "double": 5, "unitId" : "USD" });
 ```
 
 You can also use plain JavaScript numbers for cases when you'll need to return value for Numi. This will be treated as a value with decimal number.
 
-```
+```js
 numi.setVariable("yyy", 122);
 ```
 
@@ -46,7 +46,7 @@ Use `numi.addUnit` to add new unit. `id` field required for internal use, and mi
 
 Unit conversion limited to ratio-based conversion ATM. For each unit you can specify base unit identifier `baseUnitId` and `ratio` to that unit. Conversion from one unit to another in this case happening through base unit. On first step value will be converted to the base unit. On second step base value will be converted to result unit. `baseUnitId` might be picked up from [list of base units](#list-of-base-units). 
 
-```
+```js
 numi.addUnit({
     "id": "horse",
     "phrases": "horse, horses, hrs",
@@ -60,7 +60,7 @@ numi.addUnit({
 
 Use `numi.addFunction` to add new function. Values passed into evaluated function in form of array. To use function with multiple arguments you can use `;` in Numi, like `myFunction(1;5;4)`.
 
-```
+```js
 numi.addFunction({ "id": "zum", "phrases": "zum" }, function(values) {
     return { "double": values[0].double + values[1].double };
 });
