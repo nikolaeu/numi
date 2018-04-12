@@ -89,7 +89,7 @@ numi.addFunction({ "id": "zum", "phrases": "zum" }, function(values) {
 
 ### Alfred integration
 
-[Now](http://numi.io/blog/alfred) you can use Numi with [Alfred](https://alfredapp.com) for quick calculations. Just type `numi`, <kbd>n</kbd> or <kbd>=</kbd> in front of your expressions in Alfred. First you will need to install the [Numi workflow](https://github.com/nikolaeu/Numi-extensions/releases/download/1.2/Numi.alfredworkflow), and enable Alfred integration in Numi preferences. The workflow can also be installed easily with [Homebrew](http://brew.sh)-[alfred](https://github.com/danielbayley/homebrew-alfred):
+You can use Numi with [Alfred](https://alfredapp.com) for quick calculations. Just type `numi`, <kbd>n</kbd> or <kbd>=</kbd> in front of your expressions in Alfred. First you will need to install the [Numi workflow](https://github.com/nikolaeu/Numi-extensions/releases/download/1.2/Numi.alfredworkflow), and enable Alfred integration in Numi preferences. The workflow can also be installed easily with [Homebrew](http://brew.sh)-[alfred](https://github.com/danielbayley/homebrew-alfred):
 
 ```sh
 brew tap danielbayley/alfred
