@@ -11,6 +11,7 @@ You can use JavaScript extensions to add global variables, custom units or funct
 * [Custom Units](#custom-units)
 * [Custom Functions](#custom-functions)
 * [List of Base Units](#list-of-base-units)
+* [Alfred integration](#alfred-integration)
 
 ### Logging
 
@@ -86,6 +87,13 @@ numi.addFunction({ "id": "zum", "phrases": "zum" }, function(values) {
 
 - [Fluid ounces](fluid-ounce.js)
 
+### Alfred integration
 
+[Now](http://numi.io/blog/alfred) you can use Numi with [Alfred](https://alfredapp.com) for quick calculations. Just type `numi`, <kbd>n</kbd> or <kbd>=</kbd> in front of your expressions in Alfred. First you will need to install the [Numi workflow](releases/download/latest/numi.alfredworkflow), and enable Alfred integration in Numi preferences. The workflow can also be installed easily with [Homebrew](http://brew.sh)-[alfred](https://github.com/danielbayley/homebrew-alfred):
 
+```sh
+brew tap danielbayley/alfred
+brew cask install alfred-numi
+```
 
+![gif](http://numi.io/static/gif/alfred.gif)
