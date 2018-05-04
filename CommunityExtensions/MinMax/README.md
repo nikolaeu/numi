@@ -11,9 +11,9 @@ Simply download the .js file to your numi extensions directory.
 ## How to use it :wrench:
 
 ```
-min(5;3;7) // 7
+nmin(5;3;7) // 7
 
 x = 7
 y = 25
-max(x;y) // 25
+nmax(x;y) // 25
 ```
