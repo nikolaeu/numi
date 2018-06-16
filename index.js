@@ -12,7 +12,7 @@ run = input => {
   let result
   try { result = os.doShellScript(curl) }
   catch ({message}) {
-    if (message.includes('Failed to connect')) {
+    if (message.includes('Failed to connect') && !numi.running()) {
       numi.activate()
       delay(.25)
       se.processes.byName('Numi').visible = false
