@@ -96,4 +96,6 @@ brew tap danielbayley/alfred
 brew cask install alfred-numi
 ```
 
+For the LaunchBar extension please refer to [https://github.com/Rahlir/NumiLaunchbar](https://github.com/Rahlir/NumiLaunchbar).
+
 ![gif](http://numi.io/gif/alfred.gif)
