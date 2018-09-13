@@ -96,4 +96,4 @@ brew tap danielbayley/alfred
 brew cask install alfred-numi
 ```
 
-![gif](http://numi.io/static/gif/alfred.gif)
+![gif](http://numi.io/gif/alfred.gif)
