@@ -18,4 +18,4 @@ You can set your VAT amount in the extension file by editing the line:
 The terminology described above can be used with first letter capital or not. 
 
 ## Example :memo:
-![extensionDemonstration](https://raw.githubusercontent.com/gomako/numi-extensions/master/CommunityExtensions/NettTotalCalculator/SS.png)
+![extensionDemonstration](SS.png)
