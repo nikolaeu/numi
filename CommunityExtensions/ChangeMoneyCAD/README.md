@@ -25,4 +25,4 @@ The terminology described above can be used with first letter capital or not. Al
 
 
 ## Example :memo:
-![extensionDemonstration](https://raw.githubusercontent.com/BCPianist/numi-extensions/master/CommunityExtensions/ChangeMoneyCAD/SS.png)
+![extensionDemonstration](SS.png)
