@@ -3,9 +3,20 @@ const os = Application.currentApplication()
 os.includeStandardAdditions = true
 const se = Application('system events')
 
-const alfred = Application('Alfred 3')
+let alfred = null
 const numi = Application('Numi')
 const port = 15055
+
+try {
+	alfred = Application('Alfred 3')
+} catch (error) {}
+
+try {
+	alfred = Application('Alfred 4')
+} catch (error) {}
+
+if (alfred === null) {
+  
 
 run = input => {
   const curl = `curl -G --data-urlencode 'q=${input}' http://localhost:${port}`
