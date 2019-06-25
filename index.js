@@ -15,9 +15,6 @@ try {
 	alfred = Application('Alfred 4')
 } catch (error) {}
 
-if (alfred === null) {
-  
-
 run = input => {
   const curl = `curl -G --data-urlencode 'q=${input}' http://localhost:${port}`
   let result
@@ -46,4 +43,3 @@ run = input => {
     }
   }]
   return JSON.stringify({items})
-}
