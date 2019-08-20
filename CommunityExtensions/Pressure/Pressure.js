@@ -70,3 +70,11 @@ numi.addUnit({
     "format": "atm",
     "ratio": 1.0132533539
 });
+
+numi.addUnit({
+    "id": "millimeter of mercury",
+    "phrases": "mmHg, millimeter of mercury, millimeters of mercury",
+    "baseUnitId": "m2",
+    "format": "mmHg",
+    "ratio": 0.0013332238
+});
