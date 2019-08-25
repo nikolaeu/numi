@@ -1,6 +1,6 @@
 ## Numi
 
-[Numi](http://numi.io) is a handy calculator app for macOS. It allows to describe tasks the natural way and instantly get an accurate answer. For example, `$20 in euro - 5% discount` or `today + 2 weeks`. 
+[Numi](http://numi.app) is a handy calculator app for macOS. It allows to describe tasks the natural way and instantly get an accurate answer. For example, `$20 in euro - 5% discount` or `today + 2 weeks`. 
 
 You can use JavaScript extensions to add global variables, custom units or functions. Right now only limited set of API is available via JavaScript, but the plan is to open as much API as possible.
 
@@ -98,4 +98,4 @@ brew cask install alfred-numi
 
 For the LaunchBar extension please refer to [https://github.com/Rahlir/NumiLaunchbar](https://github.com/Rahlir/NumiLaunchbar).
 
-![gif](http://numi.io/gif/alfred.gif)
+![gif](http://numi.app/gif/alfred.gif)
