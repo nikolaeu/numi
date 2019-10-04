@@ -9,3 +9,4 @@
 * [App Documentation](../../wiki/Documentation)
 * [Writing Plugins](../../wiki/Plugins)
 
+For all support inquiries please email to [mail@numi.app](mailto:mail@numi.app).
