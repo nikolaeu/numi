@@ -7,6 +7,7 @@
 * [Writing Plugins](../../wiki/Plugins)
 * [Translation](../../wiki/Translation)
 
+![](https://numi.app/images/numi-screenshot-yellow.png)
+
 For all support inquiries please email to [mail@numi.app](mailto:mail@numi.app).
 
-![](https://numi.app/images/numi-screenshot-yellow.png)
