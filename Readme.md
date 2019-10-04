@@ -7,6 +7,8 @@
 ## Table of Contents
 
 * [App Documentation](../../wiki/Documentation)
+* [Alfred Integration](../../wiki/Alfred-Integration)
 * [Writing Plugins](../../wiki/Plugins)
+* [Translation](../../wiki/Translation)
 
 For all support inquiries please email to [mail@numi.app](mailto:mail@numi.app).
