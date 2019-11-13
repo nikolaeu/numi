@@ -1,26 +1,26 @@
-# Numi 3.20.5 for macOS
+# Numi 3.20.5 
 **Nov 03, 2019**
 - Fix macOS Catalina crash
 
-# Numi 3.20.4 for macOS
+# Numi 3.20.4 
 **Aug 12, 2019**
 - Minor services tweaks
 - Time zone fixes
 
-# Numi 3.20.3 for macOS
+# Numi 3.20.3 
 **May 10, 2019**
 Fix precision settings
 
-# Numi 3.20.2 for macOS
+# Numi 3.20.2 
 **May 05, 2019**
 Tiny internal fixes
 
-# Numi 3.20.1 for macOS
+# Numi 3.20.1 
 **Apr 28, 2019**
 * Small internal fixes
 * Updated appcast url
 
-# Numi for macOS 3.20
+# Numi  3.20
 **Dec 27, 2018**
 - Extended cryptocurrency support
 - Fixed timezone service
