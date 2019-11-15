@@ -1,3 +1,9 @@
+## Numi 3.21 
+**Nov 09, 2019**
+<br>
+- Small Catalina fixes
+<br><br>
+
 ## Numi 3.20.5 
 **Nov 03, 2019**
 <br>
