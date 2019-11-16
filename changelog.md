@@ -1,7 +1,8 @@
-## Numi 3.21 
-**Nov 09, 2019**
+## Numi 3.21.1 
+**Nov 15, 2019**
 <br>
-- Small Catalina fixes
+- Fix crash on Mojave for some text sequences
+- Update Paddle library (v. 4.0.14)
 <br><br>
 
 ## Numi 3.20.5 
