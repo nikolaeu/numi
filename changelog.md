@@ -1,3 +1,11 @@
+## Numi 3.22 
+**Nov 16, 2019**
+<br>
+- Fixed UI to use system font
+- Enable cryptocurrencies for everyone
+- New note requires activation
+<br><br>
+
 ## Numi 3.21.1 
 **Nov 15, 2019**
 <br>
