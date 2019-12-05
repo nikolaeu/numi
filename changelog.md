@@ -1,3 +1,9 @@
+## Numi 3.22.1 
+**Dec 02, 2019**
+<br>
+- Skip document load on app crash
+<br><br>
+
 ## Numi 3.22 
 **Nov 16, 2019**
 <br>
