@@ -1,3 +1,9 @@
+## Numi 3.23 
+**Dec 28, 2019**
+<br>
+- Crash fixes
+<br><br>
+
 ## Numi 3.22.1 
 **Dec 02, 2019**
 <br>
