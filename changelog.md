@@ -1,3 +1,10 @@
+## Numi 3.24 
+**Mar 07, 2020**
+<br>
+- Localization updates & fixes
+- Remove update notifications
+<br><br>
+
 ## Numi 3.23 
 **Dec 28, 2019**
 <br>
