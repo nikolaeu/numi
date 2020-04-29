@@ -1,3 +1,10 @@
+## Numi 3.25 
+**Apr 18, 2020**
+<br>
+- Paddle framework Update
+- Frameworks cleanup
+<br><br>
+
 ## Numi 3.24 
 **Mar 07, 2020**
 <br>
