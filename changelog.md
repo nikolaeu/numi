@@ -1,3 +1,9 @@
+## Numi 3.26 
+**May 07, 2020**
+<br>
+* New time zone service
+<br><br>
+
 ## Numi 3.25 
 **Apr 18, 2020**
 <br>
