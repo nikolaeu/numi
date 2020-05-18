@@ -1,3 +1,9 @@
+## Numi 3.27 
+**May 16, 2020**
+<br>
+Fix today widget
+<br><br>
+
 ## Numi 3.26 
 **May 07, 2020**
 <br>
