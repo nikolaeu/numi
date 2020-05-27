@@ -1,3 +1,9 @@
+## Numi 3.28 
+**May 25, 2020**
+<br>
+Add Sentry framework
+<br><br>
+
 ## Numi 3.27 
 **May 16, 2020**
 <br>
