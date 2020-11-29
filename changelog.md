@@ -1,3 +1,12 @@
+## Numi 3.29 
+**Nov 21, 2020**
+<br>
+- macOS 11 adjustments
+- Arm64 support
+- Alfred integration fixes
+
+<br><br>
+
 ## Numi 3.28 
 **May 25, 2020**
 <br>
