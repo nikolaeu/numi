@@ -11,9 +11,16 @@ Simply download the .js file to your numi extensions directory.
 
 ## How to use it :wrench:
 
-You can set your VAT amount in the extension file by editing the line:
+```
+nett(100) // 83.33
+nett(50) // 41.67
+nett(187.50) // 156.25
+nett(12.1;21) // 10
+```
 
-`var vat = 20;`
+You can set your default VAT amount in the extension file by editing the line:
+
+`var vat = values[1]?.double ?? 20`
 
 The terminology described above can be used with first letter capital or not. 
 
