@@ -8,15 +8,17 @@ const numi = Application('Numi')
 const port = 15055
 
 try {
-	alfred = Application('Alfred 3')
+  alfred = Application('Alfred 3')
 } catch (error) {}
 
 try {
-	alfred = Application('Alfred 4')
+  alfred = Application('Alfred 4')
 } catch (error) {}
 
 run = input => {
-  const curl = `curl -G --data-urlencode 'q=${input}' http://localhost:${port}`
+  const query = encodeURIComponent(input)
+  const curl = `curl --get 'http://localhost:${port}?q=${query}'`
+
   let result
   try { result = os.doShellScript(curl) }
   catch ({message}) {
@@ -43,3 +45,4 @@ run = input => {
     }
   }]
   return JSON.stringify({items})
+}
