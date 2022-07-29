@@ -8,7 +8,7 @@ const dot = (u, v) => {
     return u.map((x, i) => u[i] * v[i]).reduce((m, n) => m + n);
 };
 
-numi.addFunction({ "id": "angle", "phrases": "angle" }, function (values) {
+numi.addFunction({ "id": "angle", "phrases": "angle" }, (values) => {
     if (values.length !== 2) {
         return;
     }
@@ -20,7 +20,7 @@ numi.addFunction({ "id": "angle", "phrases": "angle" }, function (values) {
     }
 });
 
-numi.addFunction({ "id": "dot", "phrases": "dot" }, function (values) {
+numi.addFunction({ "id": "dot", "phrases": "dot" }, (values) => {
     if (values.length !== 2) {
         return;
     }
@@ -29,26 +29,25 @@ numi.addFunction({ "id": "dot", "phrases": "dot" }, function (values) {
     return v.length === u.length ? dot(u, v) : null;
 });
 
-numi.addFunction({ "id": "vec", "phrases": "vec" }, function (values) {
+numi.addFunction({ "id": "vec", "phrases": "vec" }, (values) => {
     if (values.length >= 2 && values.length <= 3) {             // allow only 2d,3d vectors
         const argVector = values.map((obj) => obj.double);
 
         let returnIndex = null;
         vectorStore.every((vector, vectorIndex) => {
-            if (vector.length === argVector.length) {
-                if (argVector.every((val, i) => val === vector[i])) {
 
-                    returnIndex = vectorIndex;
-                    return false;
-                }
+            if (vector.length !== argVector.length) {
+                return true;
+            }
+
+            if (argVector.every((val, i) => val === vector[i])) {
+                returnIndex = vectorIndex;
+                return false;
             }
             return true;
         });
 
-        if (returnIndex === null) {
-            return (vectorStore.push(argVector) - 1);
-        }
-        return returnIndex;
+        return returnIndex === null ? (vectorStore.push(argVector) - 1) : returnIndex;
     }
     return;
 });
