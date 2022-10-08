@@ -12,7 +12,7 @@ try {
 } catch (error) {}
 
 try {
-  alfred = Application('Alfred 4')
+  alfred = Application('com.runningwithcrayons.Alfred')
 } catch (error) {}
 
 run = input => {
