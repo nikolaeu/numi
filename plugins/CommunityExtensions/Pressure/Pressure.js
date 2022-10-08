@@ -78,3 +78,12 @@ numi.addUnit({
     "format": "mmHg",
     "ratio": 0.0013332238
 });
+
+numi.addUnit({
+    "id": "Pound-force per square inch",
+    "phrases": "psi, Pound-force per square inch",
+    "baseUnitId": "m2",
+    "format": "psi",
+    "ratio": 0.0689475729
+});
+
