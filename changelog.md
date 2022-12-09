@@ -1,3 +1,21 @@
+## Numi 3.31 
+**Dec 07, 2022**
+<br>
+- Fix crash (Ventura)
+- Fix window focus in Mission Control (Ventura)
+<br><br>
+
+## Numi 3.30 
+**May 14, 2022**
+<br>
+- Fixes PST timezone bug
+- Slight icons adjustments
+- Disable engine cache via user defaults
+- Improved extension logs
+- macOS 12 fixes
+- SetApp 1.6.3
+<br><br>
+
 ## Numi 3.29 
 **Nov 21, 2020**
 <br>
