@@ -11,5 +11,15 @@
 * [Plugins](../../wiki/Plugins)
 * [Translation](../../wiki/Translation)
 
+## Numi CLI (Experimental)
+
+You can use Numi from command line on Linux and macOS. Not all features are supported yet. To start using install with [Homebrew](https://brew.sh/): 
+
+`brew install nikolaeu/numi/numi-cli`
+
+Usage example:
+
+`numi-cli "20 inches in cm"`
+
 For all support inquiries send an email to [mail@numi.app](mailto:mail@numi.app).
 
