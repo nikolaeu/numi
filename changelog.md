@@ -1,3 +1,11 @@
+## Numi 3.32 
+**Apr 04, 2023**
+<br>
+- Minor UI tweaks & optimizations
+- Menu shortcuts for new note, notes list
+- Framework updates
+<br><br>
+
 ## Numi 3.31 
 **Dec 07, 2022**
 <br>
