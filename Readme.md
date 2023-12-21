@@ -26,6 +26,34 @@ Most features of the Numi for macOS are supported in CLI. However, these are the
 
 ## Documentation
 
+-   [Unit Conversion](#unit-conversion)
+-   [Time Zone Conversion](#time-zone-conversion)
+-   [Operations](#operations)
+-   [Numbers](#numbers)
+-   [Currency](#currency)
+-   [Percentage](#percentage)
+-   [Scales](#scales)
+-   [Variables](#variables)
+-   [Constants](#constants)
+-   [Functions](#functions)
+-   [CSS](#css)
+-   [Previous Result](#previous-result)
+-   [Sum](#sum)
+-   [Average](#average)
+-   [SI prefixes](#si-prefixes)
+-   [Date & Time](#date-time)
+-   [Temperature](#temperature)
+-   [Length](#length)
+-   [Area](#area)
+-   [Volume](#volume)
+-   [Weight](#weight)
+-   [Angular](#angular)
+-   [Data](#data)
+-   [Format](#format)
+-   [Shortcuts](#shortcuts)
+-   [Import & Export](#import-export)
+-   [Alfred](#alfred)
+
 ### Unit Conversion
 
 With `in (into, as, to)` you can convert one unit into another. Numi will automatically convert units to perform operations if it's needed during conversion.
