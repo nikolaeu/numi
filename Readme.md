@@ -16,7 +16,7 @@ CLI usage example (pass `-h` for more options):
 
 Most features of the Numi for macOS are supported in CLI. However, these are the features that **has not yet been implemented in CLI**:
 
--   Localization support
+-   ~Localization support~
 -   Timezone conversion
 -   Dates
 -   CSS
