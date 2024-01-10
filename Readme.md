@@ -4,11 +4,27 @@
 
 ![](https://numi.app/images/numi-screenshot-yellow.png)
 
-You can use Numi from command line on Linux and macOS or as a desktop app on macOS. The recommended way to install CLI version is using [Homebrew](https://brew.sh/):
+## Installation
+
+### MacOS
+
+For CLI installation recommended way is using [Homebrew](https://brew.sh/):
 
 `brew install nikolaeu/numi/numi-cli`
 
-Desktop version for macOS version can be downloaded from the [app website](https://numi.app). You can also download the most recent CLI, desktop version and new Alfred extension manually from the [releases](https://github.com/nikolaeu/numi/releases/) page. _Note, there's no need to enable Alfred integration in app preferences with the new workflow (just make sure CLI version has been installed)._
+Desktop version for macOS version can be downloaded from the [app website](https://numi.app). 
+
+You can also download the most recent CLI, desktop version and new Alfred extension manually from the [releases](https://github.com/nikolaeu/numi/releases/) page. _Note, there's no need to enable Alfred integration in app preferences with the new workflow (just make sure CLI version has been installed)._
+
+### Linux
+
+Install CLI version for Linux using [Homebrew](https://brew.sh/):
+
+`brew install nikolaeu/numi/numi-cli`
+
+You can also find available binaries (including musl version) on [releases page](https://github.com/nikolaeu/numi/releases).
+
+## Usage
 
 CLI usage example (pass `-h` for more options):
 
