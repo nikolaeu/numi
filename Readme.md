@@ -6,36 +6,33 @@
 
 ## Installation
 
-### MacOS
+Desktop version for macOS can be downloaded from the [app website](https://numi.app) or from releases page on GitHub.
 
-For CLI installation recommended way is using [Homebrew](https://brew.sh/):
+- [Numi for MacOS](https://s1.numi.app/download)
+- [Numi for Windows](https://api.ak.numi.app/win-download)
 
-`brew install nikolaeu/numi/numi-cli`
+Terminal version can be installed using provided shell command (same command used to update binary).
 
-Desktop version for macOS version can be downloaded from the [app website](https://numi.app). 
+```
+curl -sS https://s3.numi.io/cli/install.sh | sh
+```
 
-You can also download the most recent CLI, desktop version and new Alfred extension manually from the [releases](https://github.com/nikolaeu/numi/releases/) page. _Note, there's no need to enable Alfred integration in app preferences with the new workflow (just make sure CLI version has been installed)._
+Alternative way of installing using [Homebrew](https://brew.sh/): `brew install nikolaeu/numi/numi-cli`.
 
-### Linux
-
-Install CLI version for Linux using [Homebrew](https://brew.sh/):
-
-`brew install nikolaeu/numi/numi-cli`
-
-You can also find available binaries (including musl version) on [releases page](https://github.com/nikolaeu/numi/releases).
+Alfred extension can be [downloaded](https://s3.numi.io/extensions/numi.alfredworkflow) directly, requires terminal version to work.
 
 ## Usage
 
-CLI usage example (pass `-h` for more options):
+Terminal version can be used this way:
 
 `numi-cli "20 inches in cm"`
 
-Most features of the Numi for macOS are supported in CLI. However, these are the features that **has not yet been implemented in CLI**:
+Most features of the Numi for macOS are supported in terminal. However, these are the features that **have not yet been implemented**:
 
 -   ~Localization support~
+-   ~Tokens (sum, prev, avg)~
+-   ~Dates~
 -   Timezone conversion
--   Dates
 -   CSS
 -   Variables
--   Tokens (sum, prev, avg)
 -   Plugins/extension
