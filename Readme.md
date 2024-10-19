@@ -8,13 +8,13 @@
 
 Desktop version for macOS can be downloaded from the [app website](https://numi.app) or from releases page on GitHub.
 
-- [Numi for MacOS](https://s1.numi.app/download)
-- [Numi for Windows](https://api.ak.numi.app/win-download)
+-   [Numi for MacOS](https://s1.numi.app/download)
+-   [Numi for Windows](https://api.ak.numi.app/win-download)
 
 Terminal version can be installed using provided shell command (same command used to update binary).
 
 ```
-curl -sS https://s3.numi.io/cli/install.sh | sh
+curl -sS https://s.numi.app/cli | sh
 ```
 
 Alternative way of installing using [Homebrew](https://brew.sh/): `brew install nikolaeu/numi/numi-cli`.
