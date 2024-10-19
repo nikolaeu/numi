@@ -14,7 +14,7 @@ Desktop version for macOS can be downloaded from the [app website](https://numi.
 Terminal version can be installed using provided shell command (same command used to update binary).
 
 ```
-curl -sS https://s.numi.app/cli | sh
+curl -sSL https://s.numi.app/cli | sh
 ```
 
 Alternative way of installing using [Homebrew](https://brew.sh/): `brew install nikolaeu/numi/numi-cli`.
