@@ -8,8 +8,8 @@
 
 Desktop version for macOS can be downloaded from the [app website](https://numi.app) or from releases page on GitHub.
 
--   [Numi for MacOS](https://s1.numi.app/download)
--   [Numi for Windows](https://api.ak.numi.app/win-download)
+-   [Numi for MacOS](https://s.numi.app/download)
+-   [Numi for Windows](https://s.numi.app/win-download)
 
 Terminal version can be installed using provided shell command (same command used to update binary).
 
@@ -19,7 +19,7 @@ curl -sSL https://s.numi.app/cli | sh
 
 Alternative way of installing using [Homebrew](https://brew.sh/): `brew install nikolaeu/numi/numi-cli`.
 
-Alfred extension can be [downloaded](https://s3.numi.io/extensions/numi.alfredworkflow) directly, requires terminal version to work.
+Alfred extension can be [downloaded](https://files.us-sea-1.linodeobjects.com/extensions/numi.alfredworkflow) directly, requires terminal version to work.
 
 ## Usage
 
